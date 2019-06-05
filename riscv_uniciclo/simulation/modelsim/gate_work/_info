@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\letic\OneDrive\Oac\150015178 - Projeto Final\mips_uniciclo\simulation\modelsim
+Euniciclo
+Z1 w1531444797
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
+Z8 dC:\Users\letic\OneDrive\Oac\150015178 - Projeto Final\mips_uniciclo\simulation\modelsim
+Z9 8uniciclo.vho
+Z10 Funiciclo.vho
+l0
+L34
+VCEkXZc33mJ2NC;AM^jGI`3
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1559332334.269000
+Z13 !s90 -reportprogress|300|-93|-work|work|uniciclo.vho|
+Z14 !s107 uniciclo.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 ?d4029NRLmC@@`7BB>Eo10
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 uniciclo 0 22 CEkXZc33mJ2NC;AM^jGI`3
+l4287
+L244
+VNK<9Z6kSGf<@WOdG@ikgE1
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 ;KOG882e3Re03o;Dd15mY3
+!i10b 1
+Euniciclo_tb
+Z17 w1531430514
+R5
+R6
+R8
+Z18 8C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/mips_uniciclo/uniciclo_tb.vhd
+Z19 FC:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/mips_uniciclo/uniciclo_tb.vhd
+l0
+L10
+VPei0aoW?CaM8cX0]idAEg1
+!s100 ?VOl?V3@DE0ToW`^zzBig3
+R11
+31
+!i10b 1
+Z20 !s108 1559332341.455000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/mips_uniciclo/uniciclo_tb.vhd|
+Z22 !s107 C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/mips_uniciclo/uniciclo_tb.vhd|
+R15
+R16
+Auniciclo_arch
+R5
+R6
+DEx4 work 11 uniciclo_tb 0 22 Pei0aoW?CaM8cX0]idAEg1
+l26
+L13
+V2zz067ZdTczlVOdj4B;[@2
+!s100 Ko^`ZKDfEeUR4]4U;5H=G0
+R11
+31
+!i10b 1
+R20
+R21
+R22
+R15
+R16

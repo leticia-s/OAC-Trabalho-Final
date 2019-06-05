@@ -1,0 +1,27 @@
+library	ieee;
+use	ieee.std_logic_1164.all;
+use	ieee.numeric_std.all;
+use work.mips_pkg.all;
+
+ENTITY pc is
+	generic	(	WSIZE	:	natural	:=	32);
+	port(
+		clk : in std_logic;
+		address_in : in std_logic_vector ((WSIZE - 1) downto 0);
+
+		address_out : out std_logic_vesctor (7 downto 0)
+	);
+END ENTITY;
+
+ARCHITECTURE rtl of pc is
+	address_in := "00000000000000000000000000000000";
+	address_out := "00000000";
+BEGIN
+	PROCESS(clk)
+	BEGIN
+		if(rising_edge(clk)) then
+			address_out <= address_in(9 downto 2);
+		end if;
+	END PROCESS;
+
+END ARCHITECTURE;
