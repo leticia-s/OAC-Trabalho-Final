@@ -63,16 +63,16 @@ begin
 		selector => AluSrc,
 		result => res_mux_inB_ula);
 	
-	b_regis: breg port MAP (clk => clk, -- Banco de Registradores
+	b_regis: xreg port MAP (clk => clk, -- Banco de Registradores
 				--escrita
 				wren => RegWrite, -- habilita escrita
-				wadd => mem_ins_out(11 downto 7), --endereço do reg para escrita
-				wdata => wdata, --valor para escrever no wadd
+				rd => mem_ins_out(11 downto 7), --endereço do reg para escrita
+				data => wdata, --valor para escrever no rd
 				--leitura
-				radd1 => mem_ins_out(19 downto 15), --  endereço do reg a ser lido em r1
-	         radd2 => mem_ins_out(24 downto 20), -- endereço do reg a ser lido em r2
-				r1 => readData1, -- saída ler reg endereçado por add2
-				r2 => readData2,-- saída ler reg endereçado por add1
+				rs1 => mem_ins_out(19 downto 15), --  endereço do reg a ser lido em ro1
+	         rs2 => mem_ins_out(24 downto 20), -- endereço do reg a ser lido em ro2
+				ro1 => readData1, -- saída ler reg endereçado por rs1
+				ro2 => readData2,-- saída ler reg endereçado por rs2
 				--reset
 				rst => reset); -- sinal de reset, zera todos regs
 	

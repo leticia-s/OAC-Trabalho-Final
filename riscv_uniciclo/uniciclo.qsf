@@ -61,7 +61,7 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME uniciclo_tb -section_id u
 set_global_assignment -name EDA_TEST_BENCH_FILE uniciclo_tb.vhd -section_id uniciclo_tb
 set_global_assignment -name VHDL_FILE uniciclo.vhd
 set_global_assignment -name VHDL_FILE uniciclo_tb.vhd
-set_global_assignment -name VHDL_FILE breg.vhd
+set_global_assignment -name VHDL_FILE xreg.vhd
 set_global_assignment -name VHDL_FILE control.vhd
 set_global_assignment -name VHDL_FILE c_ula.vhd
 set_global_assignment -name VHDL_FILE ula.vhd

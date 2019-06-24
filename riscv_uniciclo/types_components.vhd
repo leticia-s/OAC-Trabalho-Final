@@ -30,12 +30,12 @@ package	types_components	is
 		);
 	end	component;
 	
-	COMPONENT breg
+	COMPONENT xreg
 		port ( 
  	 	clk, wren, rst 	 	: in std_logic;
- 	 	radd1, radd2, wadd 	: in std_logic_vector(4 downto 0); 
- 	 	wdata  	 	 	: in std_logic_vector(31 downto 0); 
- 	 	r1, r2 	: out std_logic_vector(31 downto 0)); 
+ 	 	rs1, rs2, rd 	: in std_logic_vector(4 downto 0); 
+ 	 	data  	 	 	: in std_logic_vector(31 downto 0); 
+ 	 	ro1, ro2 	: out std_logic_vector(31 downto 0)); 
 	END COMPONENT;
 	
 	component somador is 
