@@ -1,9 +1,3 @@
--- *    @file: XREG.vhd
---*     @author: Letícia de Souza Soares
---*  @Matricula: 15/0015178 
---* @disciplina: Organização e Arquitetura de Computadores
---*
---* Trabalho Projeto do Banco de Registradores do RISC-V 
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;

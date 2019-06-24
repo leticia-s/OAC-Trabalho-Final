@@ -1,5 +1,5 @@
 Flow report for uniciclo
-Mon Jun 24 02:49:36 2019
+Mon Jun 24 02:56:47 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Jun 24 02:49:36 2019           ;
+; Flow Status                        ; Successful - Mon Jun 24 02:56:47 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                        ;
 ; Top-level Entity Name              ; uniciclo                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/24/2019 02:48:41 ;
+; Start date & time ; 06/24/2019 02:55:54 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; uniciclo            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+-----------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                       ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+-----------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 21850503040.156135532104564 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 21850503040.156135575417148 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; i1                          ; --            ; --          ; uniciclo_tb    ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; uniciclo_tb                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                        ; --            ; --          ; eda_simulation ;
@@ -105,12 +105,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:12     ; 1.0                     ; 4675 MB             ; 00:00:11                           ;
-; Fitter                    ; 00:00:33     ; 1.0                     ; 4944 MB             ; 00:00:33                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4576 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4642 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4564 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:52     ; --                      ; --                  ; 00:00:51                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4671 MB             ; 00:00:11                           ;
+; Fitter                    ; 00:00:33     ; 1.0                     ; 4944 MB             ; 00:00:32                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4580 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4629 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4573 MB             ; 00:00:02                           ;
+; Total                     ; 00:00:50     ; --                      ; --                  ; 00:00:50                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
