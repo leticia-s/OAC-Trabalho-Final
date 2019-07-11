@@ -35,8 +35,8 @@ architecture rtl of uniciclo is
 	SIGNAL address_out_pc, mem_ins_out: std_logic_vector(31 downto 0);
 	SIGNAL readData1, wdata, readData2 : std_logic_vector(31 downto 0);
 	SIGNAL imm32 : signed(31 DOWNTO 0);
-	-- bazu_or_banzu = branch_and_zero_ula OR BNE_and_not_zero_ula
-	SIGNAL branch_and_zero_ula, BNE_and_not_zero_ula, bazu_or_banzu : std_logic;
+	-- branch_and_zero_ula 
+	SIGNAL branch_and_zero_ula : std_logic;
 	-- saida controle ula
 	SIGNAL out_c_ula : std_logic_vector(3	downto	0);
    -- ula
@@ -44,8 +44,10 @@ architecture rtl of uniciclo is
    SIGNAL res_mux_inB_ula ,out_ula : std_logic_vector(31 downto 0);	
 	-- control signals
 	SIGNAL ALUSrc, RegWrite, Branch, MemtoReg, MemWrite : std_logic;
-	SIGNAL ALUOp : std_logic_vector(1 downto 0);
-	
+	SIGNAL ALUOp : std_logic_vector(2 downto 0);
+	--jal e jalr
+	SIGNAL jal_or_jalr, jal, jalr, jump_or_branch : std_logic;
+	SIGNAL res_mux_wdata_Xreg, result_mux_jalr, ula_or_neg1 : std_logic_vector(31 downto 0);
 begin
 	imm : genImm32 PORT MAP ( instr => mem_ins_out , imm32 => imm32 ); -- instancia um gerador de imediatos, a entrada está conectada com a saida da memoria de instrucao
 	
@@ -63,11 +65,11 @@ begin
 		selector => AluSrc,
 		result => res_mux_inB_ula);
 	
-	b_regis: xreg port MAP (clk => clk, -- Banco de Registradores
+	X_regis: xreg port MAP (clk => clk, -- Banco de Registradores
 				--escrita
 				wren => RegWrite, -- habilita escrita
 				rd => mem_ins_out(11 downto 7), --endereço do reg para escrita
-				data => wdata, --valor para escrever no rd
+				data => res_mux_wdata_Xreg, --valor para escrever no rd
 				--leitura
 				rs1 => mem_ins_out(19 downto 15), --  endereço do reg a ser lido em ro1
 	         rs2 => mem_ins_out(24 downto 20), -- endereço do reg a ser lido em ro2
@@ -79,7 +81,7 @@ begin
 	PC_P : pc port map( -- instancia do PC
 		clk => clk,
 		reset => reset,
-		address_in => result_mux_branch,
+		address_in => result_mux_jalr,
 		address_out => address_out_pc
 	);
 	
@@ -102,10 +104,12 @@ begin
 		MemWrite => MemWrite,
 		ALUOp => ALUOp,
 		RegWrite => RegWrite,
-		ALUSrc => ALUSrc
+		ALUSrc => ALUSrc,
+		jump => jal,
+		jalr => jalr
 	);
 	
-	mux_md_breg : multiplexador_32_bits port map(
+	mux_md_Xreg : multiplexador_32_bits port map(
 		opt0 => out_ula,
 		opt1 => readMemoryData,
 		selector => MemtoReg,
@@ -126,17 +130,38 @@ begin
 	   wren       => MemWrite
 	);
 
-	mux_branch : multiplexador_32_bits port map(
+	mux_jump_or_branch : multiplexador_32_bits port map(
 		opt0 => res_somapc4,
 		opt1 => res_somaImmpc,
-		selector => BAZu_or_banzu,
+		selector => jump_or_branch,
 		result => result_mux_branch
 	);
+	 -- mux quando jal ou jalr, entao, escrive no banco de registradores p+4 
+	mux_jal_jalr_Xreg : multiplexador_32_bits port map(
+		opt0 => wdata,
+		opt1 => res_somapc4,
+		selector => jal_or_jalr,
+		result => res_mux_wdata_Xreg
+	);
 	
-	branch_and_zero_ula <= Branch and zero; -- beq
-	BNE_and_not_zero_ula <= Branch and not(zero); --bne
-	BAZu_or_banzu <= branch_and_zero_ula or BNE_and_not_zero_ula;
+	mux_jalr_pc : multiplexador_32_bits port map(
+		opt0 => result_mux_branch,
+		opt1 => ula_or_neg1,
+		selector => jalr,
+		result => result_mux_jalr
+	);
 	
+	--se jalr, entao, pc = saida da ula e neg 1
+	ula_or_neg1 <= out_ula and not(x"00000001");
+	
+	--seletor do mux da entrada do wdata de Xreg
+	jal_or_jalr <= jalr or jal;
+	
+	--para seletor do mux branch ou jump
+	branch_and_zero_ula <= Branch and zero;
+	jump_or_branch <= branch_and_zero_ula or jal;
+	
+   --testbench	
 	instrucao <= mem_ins_out;
 	prox_ins <= result_mux_branch;
 	memDados <= readMemoryData;

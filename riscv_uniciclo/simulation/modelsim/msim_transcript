@@ -10,7 +10,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/breg.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/xreg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -18,23 +18,23 @@
 # -- Loading package std_logic_arith
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading package NUMERIC_STD
-# -- Compiling entity breg
-# -- Compiling architecture behavioral of breg
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/data_memory.vhd}
+# -- Compiling entity xreg
+# -- Compiling architecture behavioral of xreg
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/data_memory.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity data_memory
 # -- Compiling architecture SYN of data_memory
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/memory_instruction.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/memory_instruction.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity memory_instruction
 # -- Compiling architecture SYN of memory_instruction
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/types_components.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/types_components.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -43,7 +43,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Loading package NUMERIC_STD
 # -- Compiling package types_components
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/uniciclo.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/uniciclo.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -54,7 +54,7 @@
 # -- Loading package types_components
 # -- Compiling entity uniciclo
 # -- Compiling architecture rtl of uniciclo
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/control.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/control.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -65,7 +65,7 @@
 # -- Loading package types_components
 # -- Compiling entity control
 # -- Compiling architecture rtl of control
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/c_ula.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/c_ula.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -76,7 +76,7 @@
 # -- Loading package types_components
 # -- Compiling entity c_ula
 # -- Compiling architecture rtl of c_ula
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/ula.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/ula.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -87,7 +87,7 @@
 # -- Loading package types_components
 # -- Compiling entity ula
 # -- Compiling architecture behavioral of ula
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/somador.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/somador.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -98,7 +98,7 @@
 # -- Loading package types_components
 # -- Compiling entity somador
 # -- Compiling architecture rtl of somador
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/pc.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/pc.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -109,7 +109,7 @@
 # -- Loading package types_components
 # -- Compiling entity pc
 # -- Compiling architecture rtl of pc
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/multiplexador_32_bits.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/multiplexador_32_bits.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -120,7 +120,7 @@
 # -- Loading package types_components
 # -- Compiling entity multiplexador_32_bits
 # -- Compiling architecture rtl of multiplexador_32_bits
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/genImm32.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/genImm32.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -132,7 +132,7 @@
 # -- Compiling entity genImm32
 # -- Compiling architecture behavioral of genImm32
 # 
-# vcom -93 -work work {C:/Users/letic/OneDrive/Oac/150015178 - Projeto Final/riscv_uniciclo/uniciclo_tb.vhd}
+# vcom -93 -work work {C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/uniciclo_tb.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -155,7 +155,7 @@
 # Loading work.c_ula(rtl)
 # Loading work.ula(behavioral)
 # Loading work.multiplexador_32_bits(rtl)
-# Loading work.breg(behavioral)
+# Loading work.xreg(behavioral)
 # Loading work.pc(rtl)
 # Loading work.somador(rtl)
 # Loading work.memory_instruction(syn)
@@ -166,6 +166,15 @@
 # Loading work.data_memory(syn)
 # 
 # add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: letic  Hostname: LELE-DELL  ProcessID: 15720
+# 
+#           Attempting to use alternate WLF file "./wlft5naim6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft5naim6
+# 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals

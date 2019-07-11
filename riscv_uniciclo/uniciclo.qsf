@@ -67,7 +67,6 @@ set_global_assignment -name VHDL_FILE c_ula.vhd
 set_global_assignment -name VHDL_FILE ula.vhd
 set_global_assignment -name VHDL_FILE somador.vhd
 set_global_assignment -name VHDL_FILE pc.vhd
-set_global_assignment -name VHDL_FILE multiplexador_5_bits.vhd
 set_global_assignment -name VHDL_FILE multiplexador_32_bits.vhd
 set_global_assignment -name VHDL_FILE genImm32.vhd
 set_global_assignment -name VHDL_FILE data_memory.vhd

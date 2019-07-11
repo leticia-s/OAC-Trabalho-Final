@@ -25,8 +25,9 @@ package	types_components	is
 		port(
 		bit5funct7 : in std_logic;
 		funct3 : in std_logic_vector(2 downto 0);
-		ulaOp  : in std_logic_vector(1 downto 0);
-		ctr_ula : out std_logic_vector(3	downto	0)
+		ulaOp  : in std_logic_vector(2 downto 0);
+		ctr_ula : out std_logic_vector(3	downto	0);
+		sel_shamt :out std_logic
 		);
 	end	component;
 	
@@ -80,8 +81,10 @@ package	types_components	is
 			MemtoReg : out std_logic;
 			MemWrite : out std_logic;
 			RegWrite : out std_logic;
-			ALUOp : out std_logic_vector(1 downto 0);
-			ALUSrc : out std_logic
+			ALUOp : out std_logic_vector(2 downto 0);
+			ALUSrc : out std_logic;
+			jalr: out std_logic;
+			jump: out std_logic
 		);
 	end component;
 	
@@ -96,18 +99,15 @@ package	types_components	is
 	end component;
 	
 	-- Controle	ULA
- 	constant AND_OP :	std_logic_vector(3	downto	0)	:=	"0000";	-- 0
-   constant OR_OP :	std_logic_vector(3	downto	0)	:=	"0001";	-- 1
-   constant ADD_OP :	std_logic_vector(3	downto	0)	:=	"0010";	-- 2
-
-   constant SUB_OP :	std_logic_vector(3	downto	0)	:=	"0110";	-- 6 
-   constant SLT_OP :	std_logic_vector(3	downto	0)	:=	"0111";	-- 7
-	-- errado a partir daqui
-   constant SRL_OP :	std_logic_vector(3	downto	0)	:=	"0011";	-- 3
+ 	constant ADD_OP :	std_logic_vector(3	downto	0)	:=	"0000";	-- 0
+   constant SUB_OP :	std_logic_vector(3	downto	0)	:=	"0001";	-- 1
+   constant AND_OP :	std_logic_vector(3	downto	0)	:=	"0010";	-- 2
+   constant OR_OP :	std_logic_vector(3	downto	0)	:=	"0011";	-- 3
    constant XOR_OP :	std_logic_vector(3	downto	0)	:=	"0100";	-- 4
    constant SLL_OP :	std_logic_vector(3	downto	0)	:=	"0101";	-- 5
- 
-   constant SRA_OP :	std_logic_vector(3	downto	0)	:=	"1000";	-- 8
+	constant SRL_OP :	std_logic_vector(3	downto	0)	:=	"0110";	-- 6
+	constant SRA_OP :	std_logic_vector(3	downto	0)	:=	"0111";	-- 7
+   constant SLT_OP :	std_logic_vector(3	downto	0)	:=	"1000";	-- 8
    constant SLTU_OP:	std_logic_vector(3	downto	0)	:=	"1001";	-- 9 
    constant SGE_OP :	std_logic_vector(3	downto	0)	:=	"1010";  -- 10
    constant SGEU_OP:	std_logic_vector(3	downto	0)	:=	"1011";  -- 11
