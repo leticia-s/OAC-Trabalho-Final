@@ -2,6 +2,6 @@
 <LOG_ROOT>
 	<PROJECT NAME="uniciclo">
 		<CBX_INST_ENTRY INSTANCE_NAME="|uniciclo|data_memory:md|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_unc1.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|uniciclo|memory_instruction:mi|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6m71.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|uniciclo|memory_instruction:mi|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_2g81.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

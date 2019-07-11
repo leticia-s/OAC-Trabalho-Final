@@ -1,5 +1,5 @@
 Fitter report for uniciclo
-Thu Jul 11 16:19:32 2019
+Thu Jul 11 18:03:52 2019
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Jul 11 16:19:32 2019           ;
+; Fitter Status                      ; Successful - Thu Jul 11 18:03:52 2019           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; uniciclo                                        ;
 ; Top-level Entity Name              ; uniciclo                                        ;
@@ -1455,7 +1455,7 @@ Note: User assignments will override these defaults. The user specified values a
 ;    |genImm32:imm|                            ; 85 (85)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 81 (81)      ; 0 (0)             ; 4 (4)            ; |uniciclo|genImm32:imm                                                                         ; work         ;
 ;    |memory_instruction:mi|                   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi                                                                ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component                                ; work         ;
-;          |altsyncram_6m71:auto_generated|    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated ; work         ;
+;          |altsyncram_2g81:auto_generated|    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 8192        ; 2    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |uniciclo|memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated ; work         ;
 ;    |multiplexador_32_bits:mux_inB_ula|       ; 34 (34)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 33 (33)      ; 0 (0)             ; 1 (1)            ; |uniciclo|multiplexador_32_bits:mux_inB_ula                                                    ; work         ;
 ;    |multiplexador_32_bits:mux_jal_jalr_Xreg| ; 67 (67)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 55 (55)      ; 0 (0)             ; 12 (12)          ; |uniciclo|multiplexador_32_bits:mux_jal_jalr_Xreg                                              ; work         ;
 ;    |pc:PC_P|                                 ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 4 (4)             ; 28 (28)          ; |uniciclo|pc:PC_P                                                                              ; work         ;
@@ -1708,32 +1708,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------+---------+
 ; Name                                                                                         ; Fan-Out ;
 +----------------------------------------------------------------------------------------------+---------+
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[21] ; 259     ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[22] ; 259     ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[15] ; 258     ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[16] ; 258     ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[20] ; 244     ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[23] ; 244     ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[18] ; 242     ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[17] ; 242     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[21] ; 259     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[22] ; 259     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[15] ; 258     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[16] ; 258     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[20] ; 244     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[23] ; 244     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[18] ; 242     ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[17] ; 242     ;
 ; control:ctrl|Mux2~0                                                                          ; 88      ;
 ; xreg:X_regis|Mux30~20                                                                        ; 80      ;
 ; xreg:X_regis|Mux31~20                                                                        ; 78      ;
 ; xreg:X_regis|Mux29~20                                                                        ; 70      ;
 ; control:ctrl|Mux8~0                                                                          ; 64      ;
 ; xreg:X_regis|Mux28~20                                                                        ; 62      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[24] ; 62      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[24] ; 62      ;
 ; multiplexador_32_bits:mux_inB_ula|result[31]~2                                               ; 58      ;
 ; multiplexador_32_bits:mux_jal_jalr_Xreg|result[30]~3                                         ; 48      ;
 ; multiplexador_32_bits:mux_jal_jalr_Xreg|result[30]~2                                         ; 48      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[2]  ; 45      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[19] ; 43      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[2]  ; 45      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[19] ; 43      ;
 ; c_ula:contr_ula|Mux10~2                                                                      ; 42      ;
 ; ula:alu|Mux24~28                                                                             ; 37      ;
 ; ula:alu|ShiftRight0~99                                                                       ; 35      ;
 ; ula:alu|Mux24~29                                                                             ; 33      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[9]  ; 33      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[10] ; 33      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[9]  ; 33      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[10] ; 33      ;
 ; xreg:X_regis|Decoder0~34                                                                     ; 32      ;
 ; xreg:X_regis|Decoder0~33                                                                     ; 32      ;
 ; xreg:X_regis|Decoder0~32                                                                     ; 32      ;
@@ -1805,26 +1805,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ula:alu|Mux28~24                                                                             ; 27      ;
 ; ula:alu|ShiftRight1~73                                                                       ; 25      ;
 ; ula:alu|Mux24~18                                                                             ; 25      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[31] ; 24      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[31] ; 24      ;
 ; ula:alu|Mux31~6                                                                              ; 23      ;
 ; c_ula:contr_ula|Mux9~1                                                                       ; 22      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[14] ; 21      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[4]  ; 21      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[7]  ; 20      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[8]  ; 20      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[14] ; 21      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[4]  ; 21      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[7]  ; 20      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[8]  ; 20      ;
 ; ula:alu|Mux28~13                                                                             ; 18      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[5]  ; 18      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[5]  ; 18      ;
 ; ula:alu|ShiftLeft0~15                                                                        ; 16      ;
 ; ula:alu|ShiftLeft0~12                                                                        ; 16      ;
 ; ula:alu|ShiftLeft0~16                                                                        ; 15      ;
 ; c_ula:contr_ula|Mux9~0                                                                       ; 14      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[6]  ; 14      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[6]  ; 14      ;
 ; ula:alu|Mux9~24                                                                              ; 13      ;
 ; ula:alu|Mux9~23                                                                              ; 13      ;
 ; ula:alu|Mux9~12                                                                              ; 13      ;
 ; genImm32:imm|Mux14~1                                                                         ; 12      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[1]  ; 12      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[0]  ; 12      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[1]  ; 12      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[0]  ; 12      ;
 ; ula:alu|ShiftRight0~103                                                                      ; 11      ;
 ; ula:alu|Mux28~7                                                                              ; 11      ;
 ; multiplexador_32_bits:mux_inB_ula|result[7]~27                                               ; 11      ;
@@ -1849,7 +1849,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; multiplexador_32_bits:mux_inB_ula|result[25]~8                                               ; 10      ;
 ; multiplexador_32_bits:mux_inB_ula|result[28]~5                                               ; 10      ;
 ; multiplexador_32_bits:mux_inB_ula|result[29]~4                                               ; 10      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[13] ; 10      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[13] ; 10      ;
 ; multiplexador_32_bits:mux_inB_ula|result[24]~35                                              ; 9       ;
 ; ula:alu|Mux28~10                                                                             ; 9       ;
 ; ula:alu|Mux28~9                                                                              ; 9       ;
@@ -1861,8 +1861,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; multiplexador_32_bits:mux_inB_ula|result[21]~13                                              ; 9       ;
 ; multiplexador_32_bits:mux_inB_ula|result[27]~6                                               ; 9       ;
 ; multiplexador_32_bits:mux_inB_ula|result[30]~3                                               ; 9       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[12] ; 9       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[3]  ; 9       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[12] ; 9       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[3]  ; 9       ;
 ; ula:alu|Mux24~30                                                                             ; 8       ;
 ; xreg:X_regis|Decoder0~20                                                                     ; 8       ;
 ; xreg:X_regis|Decoder0~5                                                                      ; 8       ;
@@ -1917,7 +1917,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; genImm32:imm|Mux12~1                                                                         ; 6       ;
 ; xreg:X_regis|Mux5~20                                                                         ; 6       ;
 ; control:ctrl|Mux0~0                                                                          ; 6       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[11] ; 6       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[11] ; 6       ;
 ; ula:alu|Mux24~31                                                                             ; 5       ;
 ; ula:alu|Mux26                                                                                ; 5       ;
 ; ula:alu|Mux24~20                                                                             ; 5       ;
@@ -2022,7 +2022,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pc:PC_P|address_out[1]                                                                       ; 4       ;
 ; pc:PC_P|address_out[0]                                                                       ; 4       ;
 ; ula:alu|subu[31]~0                                                                           ; 4       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[30] ; 4       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[30] ; 4       ;
 ; ula:alu|ShiftLeft0~134                                                                       ; 3       ;
 ; ula:alu|Mux28~23                                                                             ; 3       ;
 ; ula:alu|ShiftRight0~105                                                                      ; 3       ;
@@ -2100,11 +2100,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pc:PC_P|address_out[12]                                                                      ; 3       ;
 ; pc:PC_P|address_out[11]                                                                      ; 3       ;
 ; pc:PC_P|address_out[10]                                                                      ; 3       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[27] ; 3       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[28] ; 3       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[29] ; 3       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[25] ; 3       ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|q_a[26] ; 3       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[27] ; 3       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[28] ; 3       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[29] ; 3       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[25] ; 3       ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|q_a[26] ; 3       ;
 ; multiplexador_32_bits:mux_jal_jalr_Xreg|result[30]~68                                        ; 2       ;
 ; ula:alu|ShiftLeft0~135                                                                       ; 2       ;
 ; ula:alu|ShiftRight0~107                                                                      ; 2       ;
@@ -2711,14 +2711,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 ;
-+-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------+--------------------------+----------------------+-----------------+-----------------+
-; Name                                                                                            ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF      ; Location                 ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
-+-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------+--------------------------+----------------------+-----------------+-----------------+
-; data_memory:md|altsyncram:altsyncram_component|altsyncram_unc1:auto_generated|ALTSYNCRAM        ; AUTO ; Single Port ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 2    ; data.hex ; M4K_X55_Y28, M4K_X55_Y30 ; Don't care           ; Don't care      ; Don't care      ;
-; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_6m71:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 2    ; text.hex ; M4K_X37_Y32, M4K_X37_Y31 ; Don't care           ; Don't care      ; Don't care      ;
-+-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+----------+--------------------------+----------------------+-----------------+-----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------------------+--------------------------+----------------------+-----------------+-----------------+
+; Name                                                                                            ; Type ; Mode        ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M4Ks ; MIF              ; Location                 ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ;
++-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------------------+--------------------------+----------------------+-----------------+-----------------+
+; data_memory:md|altsyncram:altsyncram_component|altsyncram_unc1:auto_generated|ALTSYNCRAM        ; AUTO ; Single Port ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 2    ; data.hex         ; M4K_X55_Y28, M4K_X55_Y30 ; Don't care           ; Don't care      ; Don't care      ;
+; memory_instruction:mi|altsyncram:altsyncram_component|altsyncram_2g81:auto_generated|ALTSYNCRAM ; AUTO ; ROM         ; Single Clock ; 256          ; 32           ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 8192 ; 256                         ; 32                          ; --                          ; --                          ; 8192                ; 2    ; MIF_MemInstr.mif ; M4K_X37_Y32, M4K_X37_Y31 ; Don't care           ; Don't care      ; Don't care      ;
++-------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+------+------------------+--------------------------+----------------------+-----------------+-----------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
 
@@ -3124,19 +3124,19 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  80 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  74 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  72 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
 Info (170189): Fitter placement preparation operations beginning
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:03
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:17
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:23
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 2% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 44% of the available device resources in the region that extends from location X36_Y26 to location X47_Y38
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:19
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:17
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 4.66 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 5.05 seconds.
 Info (306004): Started post-fitting delay annotation
 Warning (306006): Found 160 output pins without output pin load capacitance assignment
     Info (306007): Pin "instrucao[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -3302,15 +3302,15 @@ Warning (306006): Found 160 output pins without output pin load capacitance assi
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:06
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/output_files/uniciclo.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4942 megabytes
-    Info: Processing ended: Thu Jul 11 16:19:33 2019
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:00:48
+    Info: Peak virtual memory: 4937 megabytes
+    Info: Processing ended: Thu Jul 11 18:03:53 2019
+    Info: Elapsed time: 00:01:06
+    Info: Total CPU time (on all processors): 00:01:06
 
 
 +----------------------------+
