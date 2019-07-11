@@ -20,17 +20,20 @@ use work.types_components.all;
 
 entity uniciclo is
 	port(
-		reset : in std_logic := '1';
-		clk : in std_logic := '1';
-		clk_mem : in std_logic := '1';								-- clock da memoria
-		instrucao	 :out	std_logic_vector(31	downto	0);
-		outULA, memDados :out	std_logic_vector(31	downto	0);
-		prox_ins: out	std_logic_vector(31	downto	0)
+		reset : in std_logic := '1'; -- reseta pc e banco
+		clk : in std_logic := '1'; -- pc e banco
+		clk_mem : in std_logic := '1'; -- clock das memorias
+		instrucao	 :out	std_logic_vector(31	downto	0); -- saida da memoria de intrucoes
+		pc_out: out	std_logic_vector(31	downto	0); -- saida de pc
+		outULA, memDados :out	std_logic_vector(31	downto	0); -- saida da ula e saida da memoria de Dados
+		prox_ins: out	std_logic_vector(31	downto	0) -- saida somador pc+4
 	);
 
 end entity;
 
 architecture rtl of uniciclo is
+	-- Sinais de todas as conexões entre os módulos
+	
 	SIGNAL res_somapc4, res_somaImmpc, result_mux_branch, readMemoryData : std_logic_vector(31 downto 0);
 	SIGNAL address_out_pc, mem_ins_out: std_logic_vector(31 downto 0);
 	SIGNAL readData1, wdata, readData2 : std_logic_vector(31 downto 0);
@@ -48,6 +51,9 @@ architecture rtl of uniciclo is
 	--jal e jalr
 	SIGNAL jal_or_jalr, jal, jalr, jump_or_branch : std_logic;
 	SIGNAL res_mux_wdata_Xreg, result_mux_jalr, ula_or_neg1 : std_logic_vector(31 downto 0);
+	--
+	SIGNAL lui : std_logic;
+	SIGNAL result_muxLui: std_logic_vector(31 downto 0);
 begin
 	imm : genImm32 PORT MAP ( instr => mem_ins_out , imm32 => imm32 ); -- instancia um gerador de imediatos, a entrada está conectada com a saida da memoria de instrucao
 	
@@ -106,7 +112,8 @@ begin
 		RegWrite => RegWrite,
 		ALUSrc => ALUSrc,
 		jump => jal,
-		jalr => jalr
+		jalr => jalr,
+		lui => lui
 	);
 	
 	mux_md_Xreg : multiplexador_32_bits port map(
@@ -138,7 +145,7 @@ begin
 	);
 	 -- mux quando jal ou jalr, entao, escrive no banco de registradores p+4 
 	mux_jal_jalr_Xreg : multiplexador_32_bits port map(
-		opt0 => wdata,
+		opt0 => result_muxLui,
 		opt1 => res_somapc4,
 		selector => jal_or_jalr,
 		result => res_mux_wdata_Xreg
@@ -149,6 +156,12 @@ begin
 		opt1 => ula_or_neg1,
 		selector => jalr,
 		result => result_mux_jalr
+	);
+	muxlui_in_muxjal : multiplexador_32_bits port map(
+		opt0 => wdata,
+		opt1 => std_logic_vector(imm32),
+		selector => lui,
+		result => result_muxLui
 	);
 	
 	--se jalr, entao, pc = saida da ula e neg 1
@@ -163,7 +176,8 @@ begin
 	
    --testbench	
 	instrucao <= mem_ins_out;
-	prox_ins <= result_mux_branch;
+	pc_out <= address_out_pc;
+	prox_ins <= result_mux_jalr;
 	memDados <= readMemoryData;
 	outULA <= out_ula;
 

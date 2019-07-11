@@ -26,8 +26,7 @@ package	types_components	is
 		bit5funct7 : in std_logic;
 		funct3 : in std_logic_vector(2 downto 0);
 		ulaOp  : in std_logic_vector(2 downto 0);
-		ctr_ula : out std_logic_vector(3	downto	0);
-		sel_shamt :out std_logic
+		ctr_ula : out std_logic_vector(3	downto	0)
 		);
 	end	component;
 	
@@ -84,7 +83,8 @@ package	types_components	is
 			ALUOp : out std_logic_vector(2 downto 0);
 			ALUSrc : out std_logic;
 			jalr: out std_logic;
-			jump: out std_logic
+			jump: out std_logic;
+			lui: out std_logic
 		);
 	end component;
 	
