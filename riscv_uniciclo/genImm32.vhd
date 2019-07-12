@@ -38,13 +38,14 @@ begin
             when  I_type_LOADS | I_type_JALR =>
                 saida <= resize(signed(imm12_i), saida'length);
 				when I_type_OPERAC =>
-				    -- se for slli ou srli ou sra
-					 case instrs_shamt is
-						when "001" => saida <= resize(signed(shamt), saida'length);
-						when "101" => saida <= resize(signed(shamt), saida'length);
-						when others  =>
-							saida <= resize(signed(imm12_i), saida'length);
-					 end case;
+				    -- se for slli ou srli ou sra => instrucoes com campo shamt
+					if instrs_shamt = "001" then
+						saida <= resize(signed(shamt), saida'length);
+					elsif instrs_shamt = "101" then
+						saida <= resize(signed(shamt), saida'length);
+					else
+						saida <= resize(signed(imm12_i), saida'length);
+					end if;
             when  U_type_LUI | U_type_AUIPC =>
                 saida <= shift_left(resize(signed(imm20_u), saida'length),12);  
             when  S_type =>

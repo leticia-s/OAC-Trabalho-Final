@@ -62,7 +62,7 @@ begin
 					ulaOp  => ALUOp,
 					ctr_ula => out_c_ula);
 	
-	alu : ula PORT MAP ( opCula => out_c_ula, A => readData1, 
+	alu : ula PORT MAP ( opCula => out_c_ula, A => result_muxLui, 
 	B => res_mux_inB_ula, ulaout => out_ula, zero => zero );
 	
 	mux_inB_ula : multiplexador_32_bits port map( -- multiplexador que define qual a entrada b da ULA (se imediato ou registrador)
@@ -145,7 +145,7 @@ begin
 	);
 	 -- mux quando jal ou jalr, entao, escrive no banco de registradores p+4 
 	mux_jal_jalr_Xreg : multiplexador_32_bits port map(
-		opt0 => result_muxLui,
+		opt0 => wdata,
 		opt1 => res_somapc4,
 		selector => jal_or_jalr,
 		result => res_mux_wdata_Xreg
@@ -157,9 +157,9 @@ begin
 		selector => jalr,
 		result => result_mux_jalr
 	);
-	muxlui_in_muxjal : multiplexador_32_bits port map(
-		opt0 => wdata,
-		opt1 => std_logic_vector(imm32),
+	muxlui_inA_ula: multiplexador_32_bits port map(
+		opt0 => readData1,
+		opt1 => x"00000000",
 		selector => lui,
 		result => result_muxLui
 	);

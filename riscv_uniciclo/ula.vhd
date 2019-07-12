@@ -47,11 +47,11 @@ begin
             when  XOR_OP =>
                 saida <= A xor B; 
             when  SLL_OP =>
-                saida <= std_logic_vector(shift_left(unsigned(B), to_integer(unsigned(A)))); 
+                saida <= std_logic_vector(shift_left(unsigned(A), to_integer(unsigned(B)))); 
             when  SRL_OP =>
-                saida <= std_logic_vector(shift_right(unsigned(B), to_integer(unsigned(A)))); 
+                saida <= std_logic_vector(shift_right(unsigned(A), to_integer(unsigned(B)))); 
             when  SRA_OP =>
-                saida <= std_logic_vector(shift_right(signed(B), to_integer(unsigned(A)))); 
+                saida <= std_logic_vector(shift_right(signed(A), to_integer(unsigned(B)))); 
             when others  =>
                 saida <= (others => '0');
         end case;
