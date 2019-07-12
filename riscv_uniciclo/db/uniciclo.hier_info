@@ -1430,7 +1430,7 @@ ulaout[28] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 ulaout[29] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 ulaout[30] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 ulaout[31] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+zero <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |uniciclo|multiplexador_32_bits:mux_inB_ula

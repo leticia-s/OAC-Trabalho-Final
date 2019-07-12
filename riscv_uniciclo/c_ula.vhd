@@ -55,7 +55,7 @@ begin
 			when others  =>
                 saida <= (others => 'X');
 		end case;
-	when "011" => --  TIPO I => lógico-aritméticas ([add, sub, and, or, slt])
+	when "011" => --  TIPO I => lógico-aritméticas nao tem subi 
 		case funct3 is
 			when "000" => saida <= ADD_OP;
 			when "001" => saida <= SLL_OP; 

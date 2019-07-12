@@ -33,17 +33,17 @@ begin
             when  SUB_OP =>
                 saida <= sub;  
             when  SLT_OP =>
-                saida <= (0 => sub(31), others => '0'); -- sub
+                saida <= (0 => sub(31), others => '0'); -- bit 31 da sub
             when  SLTU_OP => 
-					 saida <= (0 => subu(31), others => '0'); -- sub sem sinal 
+					 saida <= (0 => subu(31), others => '0'); -- bit 31 da sub sem sinal 
 				when  SGE_OP =>
-					 saida <= (0 => not(sub(31)), others => '0'); -- 1 se for maior ou igual, 0 se falso
+					 saida <= (0 => not(sub(31)), others => '0'); -- bit 31 da sub: 1 se for maior ou igual, 0 se falso
 				when  SGEU_OP =>
-					 saida <= (0 => not(subu(31)), others => '0'); --sub sem sinal negado
+					 saida <= (0 => not(subu(31)), others => '0'); --bit 31 da sub sem sinal negado
 				when  SEQ_OP =>
 					 saida <= sub; -- igual, entao coloca zero ativo para BEQ
 				when  SNE_OP =>
-					 saida <= not(sub); -- diferente, entao coloca zero inativo para BNE
+					 if (sub = X"00000000") then saida <= x"00000001"; else saida <= x"00000000"; end if; -- diferente, entao coloca zero inativo para BNE
             when  XOR_OP =>
                 saida <= A xor B; 
             when  SLL_OP =>
