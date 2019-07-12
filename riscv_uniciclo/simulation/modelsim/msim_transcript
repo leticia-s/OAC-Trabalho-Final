@@ -170,10 +170,10 @@
 # 
 #           File in use by: letic  Hostname: LELE-DELL  ProcessID: 15720
 # 
-#           Attempting to use alternate WLF file "./wlftn63y22".
+#           Attempting to use alternate WLF file "./wlft5v76rn".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlftn63y22
+#           Using alternate file: ./wlft5v76rn
 # 
 # view structure
 # .main_pane.structure.interior.cs.body.struct
