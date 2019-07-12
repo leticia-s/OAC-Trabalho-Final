@@ -20,7 +20,7 @@ architecture behavioral of xreg is
 begin   -- dois barramentos de leitura: ro1 = registrador[rs1] e ro2 = registrador[rs2];
         --um barramento de escrita: registrador[rd] = data;
 	-- leitura:
-	proc_breg: process(rs1, rs2, clk, um_Reg, rst) is 
+	proc_breg: process(rs1, rs2, clk, um_Reg, rst, wren, data) is 
 	begin
 		ro1 <= um_Reg(to_integer(unsigned(rs1)));
 		ro2 <= um_Reg(to_integer(unsigned(rs2)));
