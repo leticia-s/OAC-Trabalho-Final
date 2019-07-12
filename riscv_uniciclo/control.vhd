@@ -32,7 +32,7 @@ BEGIN
 			when I_type_LOADS => controUla <= "000"; contr_Bula <= '1'; mem2reg <= '1'; RegWrit <= '1'; MemWrit <= '0';  
 			when S_type =>       controUla <= "000"; contr_Bula <= '1'; mem2reg <= 'X'; RegWrit <= '0'; MemWrit <= '1';  
 			when SB_type =>      controUla <= "001"; contr_Bula <= '0'; mem2reg <= 'X'; RegWrit <= '0'; MemWrit <= '0'; Branc <= '1'; 
-			when U_type_AUIPC => controUla <= "000"; contr_Bula <= '1'; mem2reg <= '0'; RegWrit <= '1'; MemWrit <= '0';  
+			when U_type_AUIPC => controUla <= "000"; contr_Bula <= '1'; mem2reg <= '0'; RegWrit <= '1'; MemWrit <= '0'; -- nao foi solicitado 
 			when U_type_LUI =>   controUla <= "000"; contr_Bula <= '1'; mem2reg <= '0'; RegWrit <= '1'; MemWrit <= '0'; u_lui <= '1';  
 			when I_type_OPERAC =>controUla <= "011"; contr_Bula <= '1'; mem2reg <= '0'; RegWrit <= '1'; MemWrit <= '0'; 
 			when I_type_JALR =>  controUla <= "000";  contr_Bula <= '0'; mem2reg <= '0'; RegWrit <= '1'; MemWrit <= '0'; pula_jalr <= '1';
