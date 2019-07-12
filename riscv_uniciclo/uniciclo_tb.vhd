@@ -13,7 +13,7 @@ END uniciclo_tb;
 
 ARCHITECTURE uniciclo_arch OF uniciclo_tb IS                                                
 SIGNAL clk, reset, clk_mem : STD_LOGIC := '1';
-SIGNAL pc_out, prox_ins, instrucao, outULA, memDados :std_logic_vector(31	downto	0);
+SIGNAL pc_out, instrucao, outULA, memDados, prox_ins :std_logic_vector(31	downto	0);
 
 COMPONENT uniciclo
 	PORT (

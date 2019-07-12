@@ -113,7 +113,8 @@ package	types_components	is
    constant SGEU_OP:	std_logic_vector(3	downto	0)	:=	"1011";  -- 11
    constant SEQ_OP :	std_logic_vector(3	downto	0)	:=	"1100";  -- 12
    constant SNE_OP :	std_logic_vector(3	downto	0)	:=	"1101";  -- 13 */
-
+	
+	--geracao de immediatos
 	constant R_type	    :	std_logic_vector(6	downto	0):=	"0110011";
 	constant I_type_LOADS :	std_logic_vector(6	downto	0):=	"0000011";
 	constant I_type_OPERAC:	std_logic_vector(6	downto	0):=	"0010011";
