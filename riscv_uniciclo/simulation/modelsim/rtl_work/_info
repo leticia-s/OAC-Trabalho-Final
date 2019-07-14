@@ -19,7 +19,7 @@ L6
 VzRBT>KzmQ>C_G3bafca;N0
 Z11 OV;C;10.1d;51
 31
-Z12 !s108 1562960794.572000
+Z12 !s108 1563073654.509000
 Z13 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/c_ula.vhd|
 Z14 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/c_ula.vhd|
 Z15 o-93 -work work -O0
@@ -62,7 +62,7 @@ L6
 VNC;f_i:d3BU?iF67[Bh^B1
 R11
 31
-Z20 !s108 1562960794.466000
+Z20 !s108 1563073654.236000
 Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/control.vhd|
 Z22 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/control.vhd|
 R15
@@ -90,7 +90,7 @@ R16
 !s100 9VKPWzHjlMF>CUETCQ;561
 !i10b 1
 Edata_memory
-Z23 w1562930317
+Z23 w1563073054
 R6
 R7
 R8
@@ -101,7 +101,7 @@ L42
 V[8iVmE1gK27<C]Jl0]h^?2
 R11
 31
-Z26 !s108 1562960793.842000
+Z26 !s108 1563073653.278000
 Z27 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/data_memory.vhd|
 Z28 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/data_memory.vhd|
 R15
@@ -114,7 +114,7 @@ R7
 DEx4 work 11 data_memory 0 22 [8iVmE1gK27<C]Jl0]h^?2
 l86
 L54
-VU2UfXF2PmgbXdH0Tf3YYX1
+VEkRI:M[i[^E@_]z4kU^1S0
 R11
 31
 R26
@@ -122,7 +122,7 @@ R27
 R28
 R15
 R16
-!s100 1Hek_<CM4FQDiGPJBoUib3
+!s100 LBA<BN5M>SGH^EnGoe8fX2
 !i10b 1
 Egenimm32
 Z29 w1562891132
@@ -140,7 +140,7 @@ L7
 VOOABDQlALiJd_M340jnOB1
 R11
 31
-Z32 !s108 1562960795.163000
+Z32 !s108 1563073656.093000
 Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/genImm32.vhd|
 Z34 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/genImm32.vhd|
 R15
@@ -179,7 +179,7 @@ L42
 VR^Lg[koj_7?aR4Idg^mlN1
 R11
 31
-Z38 !s108 1562960793.991000
+Z38 !s108 1563073653.538000
 Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/memory_instruction.vhd|
 Z40 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/memory_instruction.vhd|
 R15
@@ -218,7 +218,7 @@ L6
 Va<TSOP7Fl`HOgFVRP>]Ba0
 R11
 31
-Z44 !s108 1562960795.019000
+Z44 !s108 1563073655.806000
 Z45 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/multiplexador_32_bits.vhd|
 Z46 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/multiplexador_32_bits.vhd|
 R15
@@ -261,7 +261,7 @@ L6
 VR70Rm1zi=0k;d[cDn8YEd0
 R11
 31
-Z50 !s108 1562960794.910000
+Z50 !s108 1563073655.522000
 Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/pc.vhd|
 Z52 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/pc.vhd|
 R15
@@ -304,7 +304,7 @@ L6
 VzX=dO;eo5DYI=H_9B5>Q21
 R11
 31
-Z56 !s108 1562960794.795000
+Z56 !s108 1563073655.256000
 Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/somador.vhd|
 Z58 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/somador.vhd|
 R15
@@ -350,7 +350,7 @@ R15
 R16
 !s100 Z1jkP<Dfm;b>9O6T7RQC61
 !i10b 1
-!s108 1562960794.096000
+!s108 1563073653.782000
 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/types_components.vhd|
 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/types_components.vhd|
 Eula
@@ -369,7 +369,7 @@ L7
 VZ001U`4S6@c<n1I[0:WYW1
 R11
 31
-Z62 !s108 1562960794.679000
+Z62 !s108 1563073654.897000
 Z63 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/ula.vhd|
 Z64 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/ula.vhd|
 R15
@@ -412,7 +412,7 @@ L21
 VN52cOE=k<PSo5iKV_nm4V3
 R11
 31
-Z68 !s108 1562960794.188000
+Z68 !s108 1563073653.988000
 Z69 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/uniciclo.vhd|
 Z70 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/uniciclo.vhd|
 R15
@@ -453,7 +453,7 @@ VPei0aoW?CaM8cX0]idAEg1
 R11
 31
 !i10b 1
-Z74 !s108 1562960795.298000
+Z74 !s108 1563073656.341000
 Z75 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/uniciclo_tb.vhd|
 Z76 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/uniciclo_tb.vhd|
 R15
@@ -489,7 +489,7 @@ L6
 V^kZXD[Z5:X4[Rh5G`kFVE2
 R11
 31
-Z80 !s108 1562960793.585000
+Z80 !s108 1563073653.004000
 Z81 !s90 -reportprogress|300|-93|-work|work|C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/xreg.vhd|
 Z82 !s107 C:/Users/letic/Documents/GitHub/OAC-Trabalho-Final/riscv_uniciclo/xreg.vhd|
 R15
